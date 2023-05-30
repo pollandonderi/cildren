@@ -1,0 +1,35 @@
+
+$white:#ffff;
+$the-blue:#23416cff;
+
+.main-container{
+    display: flex;
+    width: 100%;
+    background-color: $the-blue;
+    padding-block: 1em;
+    box-shadow: 2px 2px 8px $the-blue;
+    justify-content: space-around;
+    
+}
+.section1,
+.section2
+{
+    display: flex;
+    gap: 3rem;
+    
+}
+.div2{
+    display: flex;
+    justify-content: flex-end;
+}
+li{
+    list-style-type: none;
+}
+li a{
+    color: $white;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+   
+}
