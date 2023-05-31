@@ -1,13 +1,12 @@
 
-$white:#ffff;
-$the-blue:#23416cff;
+@import 'src/themes.scss';
 
 .main-container{
     display: flex;
     width: 100%;
     background-color: $the-blue;
     padding-block: 1em;
-    box-shadow: 2px 2px 8px $the-blue;
+    box-shadow: 2px 2px 8px $pinkish;
     justify-content: space-around;
     
 }
@@ -31,5 +30,37 @@ li a{
     font-size: 1.15rem;
     font-weight: 900;
     letter-spacing: 1.2px;
+    cursor: pointer;
    
+}
+.search{
+    padding:.7em .3em ;
+    background-color: $the-blue;
+    border: 3px dotted $pinkish;
+    border-radius: 50%;
+   
+ 
+}
+.search2{
+    background-color: $pinkish;
+    padding: .4em;
+    border-radius: 50%;
+    height: 2em;
+display: inline-block;
+width: 2em;
+}
+.search3{
+    background-color: $yellowish;
+    padding: .4em;
+    border-radius: 50%;
+    height: 2em;
+display: inline-block;
+width: 2em;
+}
+.search4{
+    padding:.7em .3em ;
+    background-color: $the-blue;
+    border: 3px dotted $yellowish;
+    border-radius: 50%;
+    
 }
