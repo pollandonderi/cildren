@@ -6,10 +6,9 @@
     background-image: url('/assets/second3.png');
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
 }
+
 .welcome-message{
     padding: .3rem;
     background-color:$light-bluish;
@@ -20,7 +19,7 @@
 .header-hero{
     color: $white;
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 4.5rem;
     text-transform: capitalize;
     padding-bottom: 2rem;
 }
@@ -33,18 +32,152 @@
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
-    border: 5px dotted $white;
+    border: 3px dotted $white;
     color: $white;
     border-radius: 30px;
     box-shadow: 0 0 0 6px $yellowish;
 }
 .size-hero-image{
-    height: 35rem;
+    height: 100%;
     width: 100%;
 }
 .section1{
-    width: 40%;
+    padding-inline: 2em;
+    padding-top:4em ;
 }
-.section2{
-    width: 40%;
+.diversityimg{
+    width: 100%;
+}
+.miniheadings{
+    text-align:center;
+    font-size: 2.4rem;
+    ;
+}
+
+.wavy{
+    position: relative;
+    min-height: 23rem;
+    background-image: linear-gradient(rgb(184, 214, 255), rgba(184, 214, 255, 0))
+}
+.wavy::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-image:url('/assets/wave.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cards{
+    margin-inline: 2.5rem;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 1rem;
+    color: $the-blue;
+}
+
+.card > a{
+    text-decoration: none;
+    color: $yellowish;
+    text-transform: capitalize;
+}
+.cardimages{
+    width: 8rem;
+    padding: 2px;
+    border-radius: 50%;
+}
+.cardimages-blue{
+    border: 2px dotted $the-blue;
+}
+.cardimages-light-blue{
+    border: 2px dotted $light-bluish;
+}
+.cardimages-yellow{
+    border: 2px dotted $yellowish;
+}
+.favourite-images{
+    border-radius: 15px;
+    // max-width:max( 85vw ,10px);
+    width:85vw;
+}
+.happy-image{
+    justify-content: center;
+display: flex;
+}
+.message{
+    display: inline-block;
+    left: 2rem;
+    color: $white;
+background: #74f1f1ee;
+padding: 1em;
+border-radius: 15%;
+border: 2px dotted white;
+box-shadow: 0 0 0 6px $light-bluish;
+transform: translateY(-43px);
+ }
+ .section-happy-hour{
+    padding-inline: 2rem;
+ }
+
+@media (min-width:35em) and (max-width:60em) {
+    .miniheadings{
+        font-size: 3rem;
+    }
+    .wavy{
+        min-height: 28rem;
+    }
+    .favourite-images{
+        border-radius: 15px;
+        // max-width:max( 85vw ,10px);
+        width:65vw;
+    }
+}
+@media (min-width : 60em) {
+    
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .size-hero-image{
+        height: 35rem;
+    }
+    .header-hero{
+        font-size: 5rem;
+    }
+    .section1{
+        width: 40%;
+    }
+    .section2{
+        width: 40%;
+    }
+    .miniheadings{
+        font-size: 3.4rem;
+    }
+    .wavy{
+        min-height: 36rem;
+    }
+    .cards{
+        display: flex;
+        gap: 1rem;
+    justify-content: center;
+    }
+    .favourite-images{
+        border-radius: 15px;
+        // max-width:max( 85vw ,10px);
+        width:55vw;
+    }
+    .message{
+        // transform: translateX(-8px);
+        font-size: 2em;
+        transform: translate(82px , -54px);
+    }
+
 }

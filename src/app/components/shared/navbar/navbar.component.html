@@ -1,7 +1,8 @@
 <nav class="main-container">
     <div>
-        <img src="assets/favicon.png" alt="logo" srcset="">
+        <a routerLink=""><img src="assets/favicon.png" alt="logo" srcset=""></a>
     </div>
+
     <div>
         <ul class="section1">
             <li><a routerLink="">Home</a></li>
@@ -13,8 +14,8 @@
     <div class="div2">
         <ul class="section2">
             <!-- place icon in the search word -->
-            <li><a routerLink="" class="search"><fa-icon [icon]="search" class="search2"></fa-icon></a></li>
-            <li><a class="button" routerLink=""class="search4"><fa-icon [icon]="maps" class="search3"></fa-icon></a></li>
+            <li><a routerLink="" class="searchouter borderyellow"><fa-icon [icon]="search" class="searchinner backgroundyellow"></fa-icon></a></li>
+            <li><a class="button" routerLink="maps"class="searchouter borderpink"><fa-icon [icon]="maps" class="searchinner backgroundpinkish"></fa-icon></a></li>
         </ul>
     </div>
 </nav>

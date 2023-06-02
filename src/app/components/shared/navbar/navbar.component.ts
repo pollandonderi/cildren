@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faSearch, faMapMarker } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faMapMarker, faRoute } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -8,5 +8,5 @@ import { faSearch, faMapMarker } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavbarComponent {
   search = faSearch;
-  maps = faMapMarker
+  maps = faRoute;
 }

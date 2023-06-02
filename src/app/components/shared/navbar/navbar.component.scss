@@ -6,8 +6,11 @@
     width: 100%;
     background-color: $the-blue;
     padding-block: 1em;
-    box-shadow: 2px 2px 8px $pinkish;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.664);
     justify-content: space-around;
+    position: fixed;
+    z-index: 9999;
+top: 0;
     
 }
 .section1,
@@ -33,34 +36,27 @@ li a{
     cursor: pointer;
    
 }
-.search{
+.searchouter{
     padding:.7em .3em ;
     background-color: $the-blue;
-    border: 3px dotted $pinkish;
     border-radius: 50%;
-   
- 
 }
-.search2{
-    background-color: $pinkish;
+.searchinner{
     padding: .4em;
     border-radius: 50%;
     height: 2em;
 display: inline-block;
 width: 2em;
 }
-.search3{
+.backgroundyellow{
     background-color: $yellowish;
-    padding: .4em;
-    border-radius: 50%;
-    height: 2em;
-display: inline-block;
-width: 2em;
 }
-.search4{
-    padding:.7em .3em ;
-    background-color: $the-blue;
+.borderyellow{
     border: 3px dotted $yellowish;
-    border-radius: 50%;
-    
+}
+.backgroundpinkish{
+    background-color: $pinkish;
+}
+.borderpink{
+    border: 3px dotted $pinkish;
 }
