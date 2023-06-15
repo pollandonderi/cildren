@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faAngleDoubleLeft, faLevelDownAlt, faMarker } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDoubleLeft, faCheckCircle, faLevelDownAlt, faMarker, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 const activities1 = [ {id:'1', name:"climbing walls" },{id:'2', name:"ball pools"},{id:'3', name:"trampolines"}]
 const birthdayactivities = [{id:"1", name:"cake cutting"},{id:"2",name:"Ample environment"},{id:"3", name:"speeches"}]
 @Component({
@@ -11,6 +11,7 @@ export class HomepageComponent {
 arrowdown = faLevelDownAlt;
 arrow = faAngleDoubleLeft;
 marker = faMarker;
+circlecheck = faCheckCircle;
   activities = activities1;
   birthdays = birthdayactivities;
   public visible = "";
@@ -26,4 +27,5 @@ marker = faMarker;
   showholiday(){
     
   }
+  circle = faPlusCircle
 }

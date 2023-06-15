@@ -52,7 +52,8 @@
 .miniheadings{
     text-align:center;
     font-size: 2.4rem;
-    ;
+    color: $the-blue;
+    text-transform: capitalize;
 }
 
 .wavy{
@@ -216,7 +217,7 @@ padding-block: 1rem;
 }
 .center{
     text-align: center;
-    justify-content: center;
+    justify-content: center;align-items: center;
     display: flex;
 }
 .gallery-asset{
@@ -245,10 +246,108 @@ padding-block: 1rem;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(224, 168, 216, 0.445);
+    background-color: rgba(224, 168, 215, 0.61);
 }
 .border-25{
     border-radius: 25px;
+    padding-bottom: 1rem;
+}
+
+.diagonal{
+    position: relative;
+    background-color: $the-blue;
+}
+.diagonal:after{
+    content:"";
+    background: $the-blue;
+    position: absolute;
+    inset: 0;
+    transform: skewY(-10deg);
+    z-index: -1;
+}
+.diagonal2{
+    position: relative;
+    background-color: $pinkish;
+    margin-top:2rem ;
+}
+.diagonal2:after{
+    content:"";
+    background: $pinkish;
+    position: absolute;
+    inset: 0;
+    transform: skewY(10deg);
+    z-index: -1;
+}
+.diagonal-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: $white;
+}
+.diagonal-content-flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+//    .card{
+//      background:yellow;
+//      width:200px;
+//        border-radius:25px
+//    }
+//    .top{
+//      background:blue;
+//      height:40px;
+//      display:flex;
+//      justify-content:center;
+//      align-items:center;
+//    }
+//    offer-container{
+//      display:flex;
+//      justify-content:center;
+//      align-items:center;
+//    }
+//    .offer-specification{
+//      background-color:black;
+//        color:white;
+//      display:inline-block;
+//      border-radius:25px;
+//      padding:1rem 2rem;
+    
+//    }
+//    .button-card{
+//      background-color:blue;
+//      transform:translateY(20px)
+//    }
+.small-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    color: $the-blue;
+    padding: .4em;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 0 6px $white;
+}
+.border-yellow{
+    border: 2px dotted $yellowish;
+}
+.border-blue{
+    border: 2px dotted $the-blue;
+}
+.border-cyan{
+    border: 2px dotted $light-bluish;
+}
+.news-image{
+    background-image:url('/assets/gallery3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10rem;
+    margin: 0 auto;
+    width: 20rem;
+    border-radius: 15px;
 }
 @media (min-width:35em) and (max-width:60em) {
     .miniheadings{
