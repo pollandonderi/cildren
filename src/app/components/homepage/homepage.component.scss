@@ -5,6 +5,7 @@
     width: 100%;
     background-image: url('/assets/second3.png');
     background-size: cover;
+    object-fit: contain;
     background-repeat: no-repeat;
    
 }
@@ -114,7 +115,7 @@ display: flex;
 .message{
     display: inline-block;
     left: 2rem;
-    color: $white;
+    color: #333;
 background: #74f1f1ee;
 padding: 1em;
 border-radius: 15%;
@@ -122,10 +123,133 @@ border: 2px dotted white;
 box-shadow: 0 0 0 6px $light-bluish;
 transform: translateY(-43px);
  }
- .section-happy-hour{
+ .happyhour-maincontainer{
+    padding-block: 3rem;
     padding-inline: 2rem;
  }
+ .happyhour-explanation{
+    line-height: 1.5rem;
+    background-image: url('/assets/blob.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .button-happyhour{
+    margin-block: 1.5rem;
+ }
+ .heading-happy{
+    color: $the-blue;
+ }
+ .offers-maincontainer{
+    padding-block: 3rem;
+padding-inline: 2rem;
+ }
+ .offers{
+    background-image: url('/assets/stacked.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .paragraph-explanation{
+    line-height: 1.6;
+    font-size: 1.125rem;
+ }
+ .offers-buttons{
+background-color: #fff;
+justify-content: space-around;
+display: flex;
+padding: .2rem;
+border: 3px dotted rgba(0, 255, 255, 0.685);
+border-radius:25px ;
+ }
+ #button1{
+background-color: $light-bluish;
+border-radius:25px ;
+padding: .4rem .5rem;
+border: none;
+cursor: pointer;
+ }
+ .button2n3{
+background-color: #fff;
+padding: .2rem .3rem;
+border-radius:25px ;
+border: none;
+cursor: pointer;
+ }
+ .offers-card-1{
+    padding: 1rem;
+    margin-block: 1rem;
+    background-color: #ffffffec;
+    border-radius: 25px;
+ }
+ .offers-card-1 >ul{
+    list-style-type: none;
+ }
+.offers-picture{
+    width: 100%;
+    padding-block: .5rem;
+    border-radius: 25px;
 
+}
+.activitieslist{
+    color: $the-blue;
+}
+.white-uppercase{
+    color: $white;
+    text-transform: uppercase;
+}
+.number{
+    color: rgba(255, 192, 203, 0.747);
+    font-size: 1.8rem;
+    text-align: center;
+
+}
+.centercontact{
+    font-size: 1rem;
+    color: white;
+padding-block: 1rem;
+
+}
+.centeritems{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.center{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.gallery-asset{
+    width: 90%;
+}
+.divided{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: .4rem;
+    flex-wrap: wrap;
+}
+.divided > * {
+    width: 40%;
+}
+#divided{
+    background-image: url('/assets/gallery3.jpg');
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(224, 168, 216, 0.445);
+}
+.border-25{
+    border-radius: 25px;
+}
 @media (min-width:35em) and (max-width:60em) {
     .miniheadings{
         font-size: 3rem;
@@ -153,10 +277,10 @@ transform: translateY(-43px);
         font-size: 5rem;
     }
     .section1{
-        width: 40%;
+        width: 30%;
     }
     .section2{
-        width: 40%;
+        width: 57%;
     }
     .miniheadings{
         font-size: 3.4rem;
@@ -172,12 +296,26 @@ transform: translateY(-43px);
     .favourite-images{
         border-radius: 15px;
         // max-width:max( 85vw ,10px);
-        width:55vw;
+        width:50%;
+    }
+    .happyhour-maincontainer{
+        display: flex;
+        gap: 2rem;
+        width: 85%;
+    
+     }
+    .happy-image{
+        justify-content: end;
     }
     .message{
-        // transform: translateX(-8px);
-        font-size: 2em;
-        transform: translate(82px , -54px);
+        transform: translate( 100% , -43px);
+    }
+    .section-happy-hour{
+width: 100%;
+    }
+    .happyhour-explanation{
+        width: 100%;
+line-height: 1.4rem;
     }
 
 }
