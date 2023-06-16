@@ -54,6 +54,7 @@
     font-size: 2.4rem;
     color: $the-blue;
     text-transform: capitalize;
+    text-decoration: underline wavy $the-blue;
 }
 
 .wavy{
@@ -352,6 +353,11 @@ padding-block: 1rem;
 @media (min-width:35em) and (max-width:60em) {
     .miniheadings{
         font-size: 3rem;
+        text-decoration: none;
+        background-image: linear-gradient($pinkish, $pinkish);
+    background-position: bottom;
+    background-size: (100% 30%);
+    background-repeat: no-repeat;
     }
     .wavy{
         min-height: 28rem;
@@ -383,6 +389,11 @@ padding-block: 1rem;
     }
     .miniheadings{
         font-size: 3.4rem;
+        text-decoration: none;
+        background-image: linear-gradient($pinkish, $pinkish);
+    background-position: bottom;
+    background-size: (100% 30%);
+    background-repeat: no-repeat;
     }
     .wavy{
         min-height: 36rem;
