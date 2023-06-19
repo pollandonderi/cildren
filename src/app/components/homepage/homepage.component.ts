@@ -15,12 +15,7 @@ circlecheck = faCheckCircle;
   activities = activities1;
   birthdays = birthdayactivities;
   circleup = faChevronCircleUp; //we will use this when offline now
-  map = faMap
-  // map = faLocationArrow
-  // map = faSearchLocation
-  // map = faMapPin
-  phone = faTty;
-  email = faMailBulk;
+ 
   public visible = "";
   public invisible = "none";
   backtoentertainment(){
