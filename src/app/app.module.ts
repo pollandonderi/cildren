@@ -6,13 +6,15 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    HomepageComponent
+    HomepageComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
