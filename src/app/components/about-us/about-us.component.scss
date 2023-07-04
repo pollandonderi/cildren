@@ -1,0 +1,19 @@
+@import "src/themes.scss";
+.body {
+  margin-top: 5rem;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headings-h3 {
+  font-size: 3rem;
+  text-decoration: none;
+  color: $the-blue;
+  background-image: linear-gradient($yellowish, $pinkish);
+  background-position: bottom;
+  background-size: (100% 30%);
+  background-repeat: no-repeat;
+  display: inline;
+}
