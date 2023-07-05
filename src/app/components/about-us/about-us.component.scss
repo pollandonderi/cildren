@@ -6,14 +6,111 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 .headings-h3 {
   font-size: 3rem;
-  text-decoration: none;
+  text-decoration: underline wavy;
   color: $the-blue;
-  background-image: linear-gradient($yellowish, $pinkish);
+  text-transform: capitalize;
+  
+  display: inline;
+}
+
+.img-Dinos{
+  height: 10rem;
+}
+.card-educational-styling{
+  color: #fff;
+  padding: .7em;
+  margin: 1rem;
+  border-radius: 25px;
+  width: 18rem;
+}
+.card1-educational-programs{
+  background-color: $pinkish;
+  border: 2px dotted white;
+  box-shadow: 0 0 0 8px $pinkish;
+}
+.card2-educational-programs{
+  background-color: $the-blue;
+  color: #fff;
+  box-shadow: 0 0 0 8px $the-blue;
+}
+.card3-educational-programs{
+  background-color: $yellowish;
+  box-shadow: 0 0 0 8px $yellowish;
+}
+.card-educational-programs{
+  line-height: 1.6;
+  font-size: 0.9rem;
+  padding-block: .5rem;
+}
+.news-link{
+  color: #fff;
+}
+.educational-programs-container{
+ display: flex;
+ gap: 1rem;
+ justify-content: center;
+ flex-wrap: wrap;
+ max-width: 1000px;
+ padding-inline: 3rem;
+ margin-block: 1rem;
+}
+.explanation-container{
+  background-color: rgba(255, 192, 203, 0.158);
+  display: flex;
+  padding-block: 1em;
+}
+.explanation-container-img{
+  width: 20rem;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.explanation-container-flex{
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.explanation-container-words{
+  margin-left: 1rem;
+}
+.read-more{
+  padding: .5em 2em;
+  background-color: $yellowish;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: 3px dotted $white;
+  color: $white;
+  border-radius: 30px;
+  box-shadow: 0 0 0 6px $yellowish;
+}
+
+@media (min-width:34em) {
+ .headings-h3{
+  text-decoration: none;
   background-position: bottom;
   background-size: (100% 30%);
   background-repeat: no-repeat;
-  display: inline;
+ }
+ .headings-h3-1{
+  background-image: linear-gradient($pinkish, $pinkish);
+}
+.headings-h3-2{
+  background-image: linear-gradient($yellowish, $yellowish);
+}
+.absolute{
+  border: 2px dotted $the-blue;
+  border-radius: 20px;
+}
+.relative{
+  position: relative;
+  transform: translate(17px, 8px);
+
+}
 }
