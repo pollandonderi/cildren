@@ -26,7 +26,7 @@
   padding: .7em;
   margin: 1rem;
   border-radius: 25px;
-  width: 18rem;
+  width: 16rem;
 }
 .card1-educational-programs{
   background-color: $pinkish;
@@ -62,7 +62,7 @@
 .explanation-container{
   background-color: rgba(255, 192, 203, 0.158);
   display: flex;
-  padding-block: 1em;
+  padding-block: 6em;
 }
 .explanation-container-img{
   width: 20rem;
@@ -120,6 +120,10 @@ h5{
   color: $the-blue;
   font-size: 1.2rem;
 }
+.testimonials{
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .what-we-offer-explanation{
   padding-left: .2em;
 }
@@ -132,6 +136,51 @@ h5{
   flex-wrap: wrap;
   justify-content: center;
 }
+.testimonials-card-maincontainer{
+  max-width: 17rem;
+  border-radius: 25px;
+  margin-bottom: 2rem;
+}
+.pink{
+  box-shadow: 1.5px 1.5px 1.5px $pinkish;
+}
+.blue{
+  box-shadow: 1.5px 1.5px 1.5px $the-blue;
+}
+.yellowish{
+  box-shadow: 1.5px 1.5px 1.5px $yellowish;
+}
+.testimonials-card1{
+  padding: .8em;
+  border-radius: 25px;
+}
+.testimonials-pink{
+  background-color: $pinkish;
+}
+.testimonials-blue{
+  background-color: $the-blue;
+}
+.testimonials-yellowish{
+  background-color: $yellowish;
+}
+.testimonials-card-maincontainer>*p{
+  color: #fff;
+}
+.holder{
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+#testimonial-p{
+  color: $the-blue;
+}
+.testimonials-maincontainer{
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 @media (min-width:34em) {
  .headings-h3{
     font-size: 2.6rem;

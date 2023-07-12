@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDoubleLeft, faQuoteLeft, faQuoteRight, faShoePrints } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-about-us',
@@ -7,5 +7,7 @@ import { faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent {
-arrow = faAngleDoubleLeft
+arrow = faAngleDoubleLeft;
+openingquotes = faQuoteLeft;
+shoes = faShoePrints;
 }
