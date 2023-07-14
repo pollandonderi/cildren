@@ -9,6 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BlogComponent } from './components/blog/blog.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BlogComponent } from './components/blog/blog.component';
     FooterComponent,
     HomepageComponent,
     AboutUsComponent,
-    BlogComponent
+    BlogComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
