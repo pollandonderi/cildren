@@ -1,78 +1,57 @@
-<nav class="main-container">
-    <div>
-        <a routerLink=""><img src="assets/favicon.png" alt="logo" srcset=""></a>
-    </div>
-
-    <div>
-        <ul class="section1">
-            <li><a routerLink="">Home</a></li>
-            <li><a routerLink="/about-us">About us</a></li>
-            <li><a routerLink="/blog">Blog</a></li>
-            <li><a routerLink="/contact-us">Contact us</a></li>
-        </ul>
-    </div>
+<!-- <nav class="main-container">
+   
     <div class="div2">
-        <ul class="section2">
+        <ul class="section2"> -->
             <!-- place icon in the search word -->
+<!--             
             <li><a routerLink="" class="searchouter borderyellow"><fa-icon [icon]="search" class="searchinner backgroundyellow"></fa-icon></a></li>
             <li><a class="button" routerLink="maps"class="searchouter borderpink"><fa-icon [icon]="maps" class="searchinner backgroundpinkish"></fa-icon></a></li>
         </ul>
     </div>
-</nav>
+</nav> -->
 
 
-<!-- 
+
 <header class="primary-header flex">
-    <div>
-        <a routerLink=""><img class="logo" src="../assets/logo6.png" width="100px" height="50px" alt="" srcset=""></a>
+    <div class="logo1">
+        <a routerLink=""><img class="logo" src="assets/logo2.png" width="110px" height="50px" alt="" srcset=""></a>
     </div>
     <button aria-controls="primary-navigation" aria-expanded="false" class="mobile-nav-toggle"><span class="sr-only">Menu</span></button>
-    
-    <nav>
+    <!-- or instead of using the span class to add the menu text you can use aria-label -->
+    <nav class="space-around">
         <ul id="primary-navigation" class="primary-navigation flex" data-attribute="false">
             <li >
                 <a routerLink="" class="active">
-                    <span aria-hidden="true"></span>HOME
+                    <span aria-hidden="true"></span>Home
                 </a>
             </li>
             <li >
-                <a routerLink="/register">
-                    <span aria-hidden="true"></span>REGISTER
+                <a routerLink="/about-us">
+                    <span aria-hidden="true"></span>About us
                 </a>
             </li>
             <li class="active">
-                <a routerLink="/aboutus">
-                    <span aria-hidden="true"></span>ABOUT US
+                <a routerLink="/blog">
+                    <span aria-hidden="true"></span>Blog
                 </a>
             </li>
        
         
             <li class="active">
-                <a routerLink="/merchandise">
-                    <span aria-hidden="true"></span>MERCHANDISE
-                </a>
-            </li>
-        
-        
-            <li class="active">
-                <a href="/shop">
-                    <span aria-hidden="true"><fa-icon [icon]="faShoppingCart"></fa-icon></span>SHOP
-                </a>
-            </li>
-        
-        
-            <li class="active">
-                <a href="/wishlist">
-                    <span aria-hidden="true"><fa-icon [icon]="faRankingStar"></fa-icon></span>WISHLIST
+                <a routerLink="/contact-us">
+                    <span aria-hidden="true"></span>Contact us
                 </a>
             </li>
             <li class="active primarymodes">
-                <a href="/modes">
+                <a>
                     <span aria-hidden="true" class="black"><fa-icon [icon]="faStarAndCrescent"></fa-icon> MODES</span>
                 </a>
             </li>
         </ul>
+        <ul id="primary-navigation" class="primary-navigation flex section2 " data-attribute="false">
+            <li><a routerLink="" class="searchouter borderyellow"><fa-icon [icon]="search" class="searchinner backgroundyellow"></fa-icon></a></li>
+            <li><a class="button" routerLink="maps"class="searchouter borderpink"><fa-icon [icon]="maps" class="searchinner backgroundpinkish"></fa-icon></a></li>
+        </ul> 
     </nav>
-</header> -->
-
+</header>
 

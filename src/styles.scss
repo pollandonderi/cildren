@@ -8,3 +8,7 @@
 font-family: 'Poppins', sans-serif;
 font-family: 'Ubuntu', sans-serif;
 }
+.flex{                       
+    display: flex;
+    gap: var(--gap, 1rem);    
+    }
