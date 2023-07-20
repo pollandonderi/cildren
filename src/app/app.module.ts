@@ -10,6 +10,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { TaskComponent } from './components/task/task.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,13 +21,17 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     HomepageComponent,
     AboutUsComponent,
     BlogComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
