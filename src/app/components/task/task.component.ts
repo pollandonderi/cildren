@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder} from '@angular/forms' 
+import { using } from 'rxjs';
 
 
 @Component({
@@ -9,9 +10,9 @@ import {FormBuilder} from '@angular/forms'
 })
 export class TaskComponent implements OnInit{
   taskList:any[]= [];
-// i:any;
   ngOnInit(): void {
-    
+    const storedTask = window.localStorage.getItem('task');
+    this.taskList = storedTask ? JSON.parse(storedTask) : [];
   }
   newTodoForm = this.formBuilder.group({
     todoItem: ''
@@ -22,6 +23,9 @@ export class TaskComponent implements OnInit{
     addTask(){
       const value = this.newTodoForm.value.todoItem;
       this.taskList.push({id:this.taskList.length, name:value});
+      // save to the localstorage using this method
+      window.localStorage.setItem('task', JSON.stringify(this.taskList))
+      //ends here
       this.newTodoForm.reset();
     }
     completed:boolean =false;
@@ -33,6 +37,7 @@ export class TaskComponent implements OnInit{
     }
     removeTask(i:any){
       this.taskList.splice(i,1)
+      window.localStorage.setItem('task', JSON.stringify(this.taskList))
     }
 
 }
