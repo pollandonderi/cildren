@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faSearch, faMapMarker, faRoute, faStarAndCrescent, faShoppingCart, faAddressBook, faTasks } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faMapMarker, faRoute, faStarAndCrescent, faShoppingCart, faAddressBook, faTasks, faStar } from '@fortawesome/free-solid-svg-icons';
 import { AboutUsComponent } from '../../about-us/about-us.component';
 
 @Component({
@@ -12,6 +12,7 @@ export class NavbarComponent implements OnInit {
   fatask= faTasks
   search = faSearch;
   maps = faRoute;
+  star = faStar;
  faStarAndCrescent = faStarAndCrescent
   faShoppingCart = faShoppingCart;
   constructor(){}
