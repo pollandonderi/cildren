@@ -1,0 +1,61 @@
+<app-navbar></app-navbar>
+<div class="main-section">
+    <!-- Bind dynamicaly the style then in component.ts file, change the style first display it then display:none -->
+    <div class="card1" [style.display]="Invisible">
+      <div class="main-container">
+        <div class="icon">
+          <img
+            class="circle"
+            src="assets/icon-star.svg"
+            alt="icon star"
+            srcset=""
+          />
+        </div>
+        <div class="h2">
+          <h2 class="text-blue">How did we do?</h2>
+        </div>
+        <div class="paragraph">
+          <p class="font-paragraph">
+            please let us know how we did with your<br />support request. All
+            feedback is appreciated<br />to help us improve our services!
+          </p>
+        </div>
+        <div class="listContainer">
+          <ul class="list paragraph">
+            <li><button class="circle paragraph" (click)="click1()">1</button></li>
+            <li><button class="circle paragraph" (click)="click2()">2</button></li>
+            <li><button class="circle paragraph" (click)="click3()">3</button></li>
+            <li><button class="circle paragraph"(click)="click4()" >4</button></li>
+            <li><button class="circle paragraph"(click)="click5()">5</button></li>
+          </ul>
+        </div>
+        <!-- use this button as an event listener to have the style changed using a method -->
+        <div class="submitcontainer">
+          <button class="submit" id="submit" type="submit" (click)="onclick()">SUBMIT</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- thank you note now -->
+    <!-- has initial display of none but on click has a display none removed and = "" meaning = nothing -->
+    <div class="card2 " [style.display]="visible">
+      <div class="thank-you-main-container">
+        <div class="illustration center">
+          <img src="assets/illustration-thank-you.svg" alt="" srcset="" />
+        </div>
+        <div class="center">
+          <p class="selection center">You selected {{number[0]}} out of 5</p>
+        </div>
+        <div class="h2customised center">
+          <h2 class="text-white">Thank You!</h2>
+        </div>
+        <div class="paragraph">
+          <p class="center thankyouparagraph">
+            We appreciate you taking the time to give a rating.<br />If you ever
+            need any more support dont hesitate to.<br />
+            get in touch.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>

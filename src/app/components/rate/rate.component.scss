@@ -1,0 +1,147 @@
+@import 'src/themes.scss';
+//just to center 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section {
+    background: $the-blue;
+    height: 100dvh;
+    height: 100svh;
+    display: grid;
+    place-items: center;
+}
+
+.card1 {
+    // padding-inline: 1rem;
+    background: $yellowish;
+    border-radius: 15px;
+}
+
+.main-container {
+    padding-inline: 1.0rem;
+}
+
+.circle {
+    background: $the-blue;
+    padding: 1.1rem;
+    border-radius: 50%;
+    outline: transparent;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.icon {
+    padding-block: 2rem;
+}
+
+.text-white {
+    color: $clr-white;
+}
+.text-blue{
+    color: $the-blue;
+}
+
+.h2 {
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: x-large;
+
+}
+
+.paragraph {
+    color: $pinkish;
+    font-weight: 400;
+    letter-spacing: 1.2;
+}
+
+.font-paragraph {
+    font-size: large;
+    color: $the-blue;
+}
+
+.listContainer {
+    padding-block: 2rem;
+}
+
+.list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.4rem;
+}
+
+button:focus {
+    background: $pinkish;
+    color: $clr-white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: $pinkish;
+    cursor: pointer;
+    color: $clr-white;
+    transition: 0.5s ease-out;
+}
+
+.submitcontainer {
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.submit {
+    background: $the-blue;
+    color: $pinkish;
+    padding: 0.6rem 8.2rem;
+    outline: transparent;
+    border-radius: 25px;
+}
+
+#submit:hover {
+    background: $pinkish;
+    cursor: pointer;
+    color: $clr-white ;
+    transition: 0.5s ease-out;
+}
+
+
+// for the card
+.card2 {
+    background: $the-blue;
+    border-radius: 15px;
+}
+
+.illustration {
+    padding: 2rem;
+}
+
+.selection {
+    color: $clr-white;
+    background: hsl(214, 19%, 21%);
+    border-radius: 25px;
+    padding: .2rem;
+    max-width: 16rem;
+}
+
+.h2customised {
+    padding-inline: 1rem;
+    font-weight: 700;
+    font-size: x-large;
+    padding-block: 1rem;
+}
+
+.thankyouparagraph {
+    color: $pinkish;
+    font-weight: 400;
+    letter-spacing: 1.2;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    text-align: center;
+}

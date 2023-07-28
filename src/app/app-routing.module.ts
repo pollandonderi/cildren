@@ -5,6 +5,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { TaskComponent } from './components/task/task.component';
+import { RateComponent } from './components/rate/rate.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path:"task",
     component:TaskComponent
+  },
+  {
+    path:"rate",
+    component:RateComponent
   }
 ];
 

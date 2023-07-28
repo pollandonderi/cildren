@@ -12,6 +12,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { TaskComponent } from './components/task/task.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RateComponent } from './components/rate/rate.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AboutUsComponent,
     BlogComponent,
     ContactUsComponent,
-    TaskComponent
+    TaskComponent,
+    RateComponent,
   ],
   imports: [
     BrowserModule,

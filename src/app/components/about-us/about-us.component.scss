@@ -69,17 +69,16 @@
   border-radius: 20px;
   margin: 0 auto;
 }
+
 .explanation-container-flex{
-  max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
 }
 .explanation-container-words{
-  // margin-left: 1rem;
   margin-block: 1rem;
-  max-width: 30rem;
+  // width: 100%;
 }
 .read-more{
   padding: .5em 2em;
@@ -99,6 +98,7 @@
   margin-top: 1rem;
 }
 #paragraph{
+  margin-inline: 2em;
   margin-block: 1em;
 }
 mark{
@@ -180,7 +180,6 @@ align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 @media (min-width:34em) {
  .headings-h3{
     font-size: 2.6rem;
@@ -204,4 +203,12 @@ align-items: center;
   transform: translate(17px, 8px);
 
 }
+}
+@media (min-width:50em) {
+  .explanation-container-words{
+    width: 50%;
+  }
+  .img-holder{
+    width: 50%;
+  }
 }
