@@ -13,6 +13,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { TaskComponent } from './components/task/task.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RateComponent } from './components/rate/rate.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { RateComponent } from './components/rate/rate.component';
     ContactUsComponent,
     TaskComponent,
     RateComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

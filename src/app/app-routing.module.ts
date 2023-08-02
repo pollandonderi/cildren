@@ -6,6 +6,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { TaskComponent } from './components/task/task.component';
 import { RateComponent } from './components/rate/rate.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path:"rate",
     component:RateComponent
+  },
+  {
+    path:'**', pathMatch: 'full',
+    component:PageNotFoundComponent
   }
 ];
 
