@@ -7,6 +7,9 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { TaskComponent } from './components/task/task.component';
 import { RateComponent } from './components/rate/rate.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { MainpageComponent } from './components/mainpage/mainpage.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { RegisterComponent } from './components/auth/register/register.component';
 
 const routes: Routes = [
   {
@@ -32,6 +35,18 @@ const routes: Routes = [
   {
     path:"rate",
     component:RateComponent
+  },
+  {
+    path:"login",
+    component:LoginComponent
+  },
+  {
+    path:"register",
+    component:RegisterComponent
+  },
+  {
+    path:"mainpage",
+    component:MainpageComponent
   },
   {
     path:'**', pathMatch: 'full',

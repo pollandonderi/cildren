@@ -14,6 +14,10 @@ import { TaskComponent } from './components/task/task.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RateComponent } from './components/rate/rate.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { RegisterComponent } from './components/auth/register/register.component';
+import { GoogleLoginProvider, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
+import { MainpageComponent } from './components/mainpage/mainpage.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,9 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     TaskComponent,
     RateComponent,
     PageNotFoundComponent,
+    LoginComponent,
+    RegisterComponent,
+    MainpageComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,10 +41,24 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SocialLoginModule
   
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: true, //keeps the user signed in
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider('702010291826-pf77khhjvqcfmkaa906pgkqddq5eeu1h.apps.googleusercontent.com') // your client id
+          }
+        ]
+      }
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
