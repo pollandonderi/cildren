@@ -1,0 +1,42 @@
+
+.diagonal{
+    position: relative;
+    background-color: #23416cff;
+}
+.diagonal:after{
+    content:"";
+    background: #23416cff;
+    position: absolute;
+    inset: 0;
+    transform: skewY(-10deg);
+    z-index: -1;
+}
+.diagonal2{
+    position: relative;
+    background-color: #e0a8d9ff;
+    margin-top:2rem ;
+}
+.diagonal2:after{
+    content:"";
+    background: #e0a8d9ff;
+    position: absolute;
+    inset: 0;
+    transform: skewY(10deg);
+    z-index: -1;
+}
+
+.diagonal-content-flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width : 60em) {
+.diagonal:after{
+    transform: skewY(-3deg);
+}
+.diagonal2:after{
+    transform: skewY(-5deg);
+}
+}

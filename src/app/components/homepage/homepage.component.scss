@@ -196,38 +196,7 @@ padding-block: 1rem;
     flex-direction: column;
     text-align: center;
 }
-.diagonal{
-    position: relative;
-    background-color: $the-blue;
-}
-.diagonal:after{
-    content:"";
-    background: $the-blue;
-    position: absolute;
-    inset: 0;
-    transform: skewY(-10deg);
-    z-index: -1;
-}
-.diagonal2{
-    position: relative;
-    background-color: $pinkish;
-    margin-top:2rem ;
-}
-.diagonal2:after{
-    content:"";
-    background: $pinkish;
-    position: absolute;
-    inset: 0;
-    transform: skewY(10deg);
-    z-index: -1;
-}
 
-.diagonal-content-flex{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
 @media (min-width:35em) and (max-width:60em) {
     .wavy{
         min-height: 28rem;
@@ -310,11 +279,6 @@ line-height: 1.4rem;
         align-items: center;
         gap: .3rem;
     }
-    .diagonal:after{
-        transform: skewY(-3deg);
-    }
-    .diagonal2:after{
-        transform: skewY(-5deg);
-    }
+   
    
 }
