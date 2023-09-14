@@ -43,5 +43,5 @@ circlecheck = faCheckCircle;
   showholiday(){
     
   }
-  circle = faPlusCircle
+
 }

@@ -1,0 +1,33 @@
+.gallery-asset{
+    width: 90%;
+    max-width: 40rem;
+}
+.divided{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: .4rem;
+    flex-wrap: wrap;
+}
+.divided > * {
+    width: 40%;
+}
+#divided{
+    background-image: url('/assets/gallery3.jpg');
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.border-25{
+    border-radius: 25px;
+    padding-bottom: 1rem;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(224, 168, 215, 0.61);
+}

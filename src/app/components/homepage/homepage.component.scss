@@ -27,17 +27,6 @@
 .pinkish{
     color: $pinkish;
 }
-.read-more{
-    padding: .5em 2em;
-    background-color: $yellowish;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-    border: 3px dotted $white;
-    color: $white;
-    border-radius: 30px;
-    box-shadow: 0 0 0 6px $yellowish;
-}
 .size-hero-image{
     height: 100%;
     width: 100%;
@@ -49,15 +38,6 @@
 .diversityimg{
     width: 100%;
 }
-.miniheadings{
-    text-align:center;
-    margin-block: 2rem;
-    font-size: 2.4rem;
-    color: $the-blue;
-    text-transform: capitalize;
-    text-decoration: underline wavy $the-blue;
-}
-
 .wavy{
     position: relative;
     min-height: 23rem;
@@ -136,9 +116,7 @@ transform: translateY(-43px);
     background-size: cover;
     background-repeat: no-repeat;
  }
- .button-happyhour{
-    margin-block: 1.5rem;
- }
+ 
  .heading-happy{
     color: $the-blue;
  }
@@ -218,45 +196,6 @@ padding-block: 1rem;
     flex-direction: column;
     text-align: center;
 }
-.center{
-    text-align: center;
-    justify-content: center;align-items: center;
-    display: flex;
-}
-.gallery-asset{
-    width: 90%;
-    max-width: 40rem;
-}
-.divided{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: .4rem;
-    flex-wrap: wrap;
-}
-.divided > * {
-    width: 40%;
-}
-#divided{
-    background-image: url('/assets/gallery3.jpg');
-    height: 100px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
-.overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(224, 168, 215, 0.61);
-}
-.border-25{
-    border-radius: 25px;
-    padding-bottom: 1rem;
-}
-
 .diagonal{
     position: relative;
     background-color: $the-blue;
@@ -355,14 +294,6 @@ padding-block: 1rem;
 }
 
 @media (min-width:35em) and (max-width:60em) {
-    .miniheadings{
-        font-size: 3rem;
-        text-decoration: none;
-        background-image: linear-gradient($pinkish, $pinkish);
-    background-position: bottom;
-    background-size: (100% 30%);
-    background-repeat: no-repeat;
-    }
     .wavy{
         min-height: 28rem;
     }
@@ -390,14 +321,7 @@ padding-block: 1rem;
     .section2{
         width: 57%;
     }
-    .miniheadings{
-        font-size: 3.4rem;
-        text-decoration: none;
-        background-image: linear-gradient($pinkish, $pinkish);
-    background-position: bottom;
-    background-size: (100% 30%);
-    background-repeat: no-repeat;
-    }
+   
     .wavy{
         min-height: 36rem;
     }
@@ -458,5 +382,4 @@ line-height: 1.4rem;
         transform: skewY(-5deg);
     }
    
-
 }
