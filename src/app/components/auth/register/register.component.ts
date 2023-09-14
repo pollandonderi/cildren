@@ -39,6 +39,9 @@ password2: new FormControl<string>('', [Validators.required])
   submit(){
 
     console.log(this.passwordForm.value);
+    if (this.passwordForm.invalid) {
+      return;
+  }
 
   }
 
