@@ -1,0 +1,15 @@
+<div class="center">
+    <h2 class="miniheadings miniheadings-underline-pink">Our latest news</h2>
+</div>
+<section class="news">
+    <div class="news-card" *ngFor="let new of news">
+      <div class="news-image-container center">
+        <img src={{new.src}} class="news-image" alt="news image" srcset="">
+      </div>
+      <div class="news-body-container">
+        <p class="news-body-link">{{new.body}}</p>
+        <h6>{{new.title}}</h6>
+        <a routerLink="" class="news-link">read more <fa-icon [icon]="arrow"  [styles]="{'color':'$pinkish'}"></fa-icon></a>
+      </div>
+    </div>
+    </section>

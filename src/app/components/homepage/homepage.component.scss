@@ -253,45 +253,7 @@ padding-block: 1rem;
 .border-cyan{
     border: 2px dotted $light-bluish;
 }
-.news{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-.news-card{ 
-    border-radius: 15px;
-    width: 90%;
-    margin: auto;
-    max-width: 21rem;
-    border-image-slice: 12 12 12 12;
-    border-image-width: 12px 12px 12px 12px;
-    border-image-outset: 0px 0px 0px 0px;
-    border-image-repeat: repeat repeat;
-    border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-5.png");
-    border-style: solid; 
-}
-.news-image{
-    height: 10rem;
-    width: 80%;
-    border-radius: 15px;
-    padding-top: 1.5rem;
-}
-.news-card >*h6{
-    font-size: 1.6rem;
-    color: $the-blue;
-}
-.news-body-container{
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 1.5rem;
-}
-.news-body-link{
-    color: $pinkish;
-}
-.news-link{
-    color: $pinkish;
-    text-align: start;
-}
+
 
 @media (min-width:35em) and (max-width:60em) {
     .wavy{
