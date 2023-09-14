@@ -18,6 +18,7 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 // import { GoogleLoginProvider, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { MainpageComponent } from './components/mainpage/mainpage.component';
     LoginComponent,
     RegisterComponent,
     MainpageComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,
