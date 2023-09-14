@@ -45,6 +45,34 @@ font-family: 'Ubuntu', sans-serif;
     box-shadow: 0 0 0 6px $yellowish;
 }
 
+// styling for the entertainment-package page
+.diagonal-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: $white;
+}
+.small-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    color: $the-blue;
+    padding: .4em;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 0 6px $white;
+}
+.border-yellow{
+    border: 2px dotted $yellowish;
+}
+.border-blue{
+    border: 2px dotted $the-blue;
+}
+.border-cyan{
+    border: 2px dotted $light-bluish;
+}
+
 
 @media (min-width:35em) and (max-width:60em) {
     .miniheadings{

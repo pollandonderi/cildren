@@ -20,6 +20,7 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { NewsComponent } from './components/news/news.component';
+import { EntertainmentPackageComponent } from './components/entertainment-package/entertainment-package.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { NewsComponent } from './components/news/news.component';
     MainpageComponent,
     GalleryComponent,
     NewsComponent,
+    EntertainmentPackageComponent,
   ],
   imports: [
     BrowserModule,
