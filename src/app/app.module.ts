@@ -22,6 +22,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { NewsComponent } from './components/news/news.component';
 import { EntertainmentPackageComponent } from './components/entertainment-package/entertainment-package.component';
 import { DiagonalsComponent } from './components/diagonals/diagonals.component';
+import { ServicesofferedComponent } from './components/servicesoffered/servicesoffered.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { DiagonalsComponent } from './components/diagonals/diagonals.component';
     NewsComponent,
     EntertainmentPackageComponent,
     DiagonalsComponent,
+    ServicesofferedComponent,
   ],
   imports: [
     BrowserModule,

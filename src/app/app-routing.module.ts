@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
+import { ServicesofferedComponent } from './components/servicesoffered/servicesoffered.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path:"mainpage",
     component:MainpageComponent
+  },
+  {
+    path:"services",
+    component:ServicesofferedComponent
   },
   {
     path:'**', pathMatch: 'full',
