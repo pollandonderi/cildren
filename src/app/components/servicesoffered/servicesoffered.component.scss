@@ -4,7 +4,7 @@
 @import 'src/themes.scss';
   
   body{
-    padding-top: 3rem;
+    padding-top: 3.7rem;
     margin: 0;
     font-family: system-ui;
     font-size: 1.125rem;
@@ -21,9 +21,12 @@
   }
   
   h1 {
-    font-size: clamp(3rem, 10vw, 5rem);
+    font-size: clamp(2.4rem, 10vw, 2.8rem);
     line-height: 1;
     margin-bottom: 1.5rem;
+  }
+  .color{
+    color: $yellowish;
   }
   
   section:not(.h1) {
@@ -47,13 +50,14 @@
   .button {
     display: inline-flex;
     padding: 0.75em 1.5em;
-    background: $the-blue;
-    color: $pinkish;
+    background: $white;
+    color: $the-blue;
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 0.875em;
     border-radius: 2rem;
+    margin-top: 2em;
   }
   
   .button:hover,
@@ -70,7 +74,11 @@
   .full-width-split-screen{
     padding-inline: $wrapper-padding-inline;
   }
-
+@media (max-width:40em) {
+  .yt{
+    display: none;
+  }
+}
   @media (min-width:600px) {
     .full-width-split-screen{
     display: grid;
@@ -112,7 +120,9 @@
     .full-width-split-screen >:not(img):last-child::before{
         grid-column: 4/5; 
     }
-
+.pr-2{
+  padding-left: 2rem;
+}
 
 
 

@@ -73,7 +73,13 @@ font-family: 'Ubuntu', sans-serif;
     border: 2px dotted $light-bluish;
 }
 
-
+.headings-h3 {
+    font-size: 1.9rem;
+    text-decoration: underline wavy;
+    color: $the-blue;
+    text-transform: capitalize;
+    display: inline;
+  }
 @media (min-width:35em) and (max-width:60em) {
     .miniheadings{
         font-size: 3rem;
