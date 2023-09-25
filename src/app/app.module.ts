@@ -19,6 +19,7 @@ import { DiagonalsComponent } from './components/diagonals/diagonals.component';
 import { ServicesofferedComponent } from './components/servicesoffered/servicesoffered.component';
 import { SharedModule } from './modules/shared/shared.module';
 import { AuthModule } from './modules/auth/auth.module';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { AuthModule } from './modules/auth/auth.module';
     FormsModule,
     ReactiveFormsModule,
     SharedModule,
-    AuthModule
+    AuthModule,
+    DashboardModule
   
   ],
   providers: [

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -24,4 +24,10 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     AppRoutingModule,
   ]
 })
-export class AuthModule { }
+export class AuthModule { 
+  constructor(@Optional() @SkipSelf() core:AuthModule ){
+    if (core) {
+        throw new Error("You should import core module only in the root module")
+    }
+  }
+}

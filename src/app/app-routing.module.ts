@@ -11,6 +11,7 @@ import { ServicesofferedComponent } from './components/servicesoffered/serviceso
 import { RegisterComponent } from './modules/auth/register/register.component';
 import { LoginComponent } from './modules/auth/login/login.component';
 import { PageNotFoundComponent } from './modules/shared/page-not-found/page-not-found.component';
+import { DashComponent } from './modules/dashboard/dash/dash.component';
 
 const routes: Routes = [
   {
@@ -52,6 +53,10 @@ const routes: Routes = [
   {
     path:"services",
     component:ServicesofferedComponent
+  },
+  {
+    path:"dash",
+    component:DashComponent
   },
   {
     path:'**', pathMatch: 'full',
