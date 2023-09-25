@@ -1,0 +1,68 @@
+@import 'src/themes.scss';
+.footer{
+    background-color: $the-blue;
+    color: $white;
+}
+.footer-space{
+padding-block: 1rem;
+margin: auto;
+}
+.footer-maincontainer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.icons-images{
+    width: 3rem;
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-h6{
+    font-size: 1.2rem;
+    padding-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-content-space{
+    padding-block: 1em;
+}
+.footer-contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-gallery{
+    width: 5rem;
+    border-radius: 10px;
+}
+.footer-gallery-container{
+    display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 1rem;
+}
+.open-hours{
+    color: #333;
+background: rgba(116, 241, 241, 0.9333333333);
+padding: 1em;
+border-radius: 15px;
+border: 2px dotted white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+}
+.padding-footer-link{
+    padding-top: 1rem;
+}
+.footer-max-width{
+    max-width: 16rem;
+}
+.footer4{
+    margin: auto;
+}
