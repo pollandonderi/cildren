@@ -4,13 +4,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    PageNotFoundComponent
   ],
   exports: [
     NavbarComponent,

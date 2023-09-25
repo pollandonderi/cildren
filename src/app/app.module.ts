@@ -11,10 +11,6 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { TaskComponent } from './components/task/task.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RateComponent } from './components/rate/rate.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { LoginComponent } from './components/auth/login/login.component';
-import { RegisterComponent } from './components/auth/register/register.component';
-// import { GoogleLoginProvider, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { NewsComponent } from './components/news/news.component';
@@ -22,6 +18,7 @@ import { EntertainmentPackageComponent } from './components/entertainment-packag
 import { DiagonalsComponent } from './components/diagonals/diagonals.component';
 import { ServicesofferedComponent } from './components/servicesoffered/servicesoffered.component';
 import { SharedModule } from './modules/shared/shared.module';
+import { AuthModule } from './modules/auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -32,9 +29,6 @@ import { SharedModule } from './modules/shared/shared.module';
     ContactUsComponent,
     TaskComponent,
     RateComponent,
-    PageNotFoundComponent,
-    LoginComponent,
-    RegisterComponent,
     MainpageComponent,
     GalleryComponent,
     NewsComponent,
@@ -49,22 +43,11 @@ import { SharedModule } from './modules/shared/shared.module';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    SharedModule
+    SharedModule,
+    AuthModule
   
   ],
   providers: [
-    // {
-    //   provide: 'SocialAuthServiceConfig',
-    //   useValue: {
-    //     autoLogin: true, //keeps the user signed in
-    //     providers: [
-    //       {
-    //         id: GoogleLoginProvider.PROVIDER_ID,
-    //         provider: new GoogleLoginProvider('702010291826-pf77khhjvqcfmkaa906pgkqddq5eeu1h.apps.googleusercontent.com') // your client id
-    //       }
-    //     ]
-    //   }
-    // }
   ],
   bootstrap: [AppComponent]
 })

@@ -6,11 +6,11 @@ import { BlogComponent } from './components/blog/blog.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { TaskComponent } from './components/task/task.component';
 import { RateComponent } from './components/rate/rate.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
-import { LoginComponent } from './components/auth/login/login.component';
-import { RegisterComponent } from './components/auth/register/register.component';
 import { ServicesofferedComponent } from './components/servicesoffered/servicesoffered.component';
+import { RegisterComponent } from './modules/auth/register/register.component';
+import { LoginComponent } from './modules/auth/login/login.component';
+import { PageNotFoundComponent } from './modules/shared/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
