@@ -20,9 +20,43 @@
 .header-hero{
     color: $white;
     font-weight: 900;
-    font-size: 4.5rem;
+    font-size: clamp(1rem ,2.8rem, 4rem);
     text-transform: capitalize;
     padding-bottom: 2rem;
+}
+.header-p{
+    color: $white;
+    padding-bottom: 1rem;
+    font-size: clamp(1rem ,1.3rem, 1.5rem);
+}
+.open-days{
+    margin: 0 auto;
+justify-content: center;
+    color: $yellowish !important;
+}
+.open-days-1{
+    background-color: $the-blue;
+    border-top-right-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+    display: grid;
+    place-items: center;
+
+    h2{
+        font-size: clamp(1rem, 2rem, 4rem);
+    }
+}
+.open-days-card{
+    
+   ul{
+    background-color: $yellowish;
+    margin-bottom: 2.4em;
+    color: $the-blue;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    padding-block: .5em;
+    padding-inline: .2em;
+   
+   }
 }
 .pinkish{
     color: $pinkish;
@@ -205,6 +239,16 @@ padding-block: 1rem;
         border-radius: 15px;
         width:65vw;
     }
+    .open-days{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .open-days-1{
+        width: 50%;
+    }
+    .open-days-2{
+        width: 30%;
+    }
 }
 @media (min-width : 60em) {
     
@@ -216,9 +260,7 @@ padding-block: 1rem;
     .size-hero-image{
         height: 35rem;
     }
-    .header-hero{
-        font-size: 4rem;
-    }
+    
     .section1{
         width: 30%;
     }
@@ -278,6 +320,16 @@ line-height: 1.4rem;
         justify-content: center;
         align-items: center;
         gap: .3rem;
+    }
+    .open-days{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .open-days-1{
+        width: 50%;
+    }
+    .open-days-2{
+        width: 30%;
     }
    
    
