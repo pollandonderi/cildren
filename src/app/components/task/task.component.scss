@@ -1,6 +1,14 @@
+@import 'src/themes.scss';
+
 .body{
     padding-top: 3.5em;
     height: 100svh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    p{
+        width: min(80%, 500px);
+        color: $the-blue;
+        margin: 0 auto;
+    }
 }
