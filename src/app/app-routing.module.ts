@@ -8,8 +8,6 @@ import { TaskComponent } from './components/task/task.component';
 import { RateComponent } from './components/rate/rate.component';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { ServicesofferedComponent } from './components/servicesoffered/servicesoffered.component';
-import { RegisterComponent } from './modules/auth/register/register.component';
-import { LoginComponent } from './modules/auth/login/login.component';
 import { PageNotFoundComponent } from './modules/shared/page-not-found/page-not-found.component';
 import { DashComponent } from './modules/dashboard/dash/dash.component';
 
@@ -39,14 +37,6 @@ const routes: Routes = [
     component:RateComponent
   },
   {
-    path:"login",
-    component:LoginComponent
-  },
-  {
-    path:"register",
-    component:RegisterComponent
-  },
-  {
     path:"mainpage",
     component:MainpageComponent
   },
@@ -58,6 +48,7 @@ const routes: Routes = [
     path:"dash",
     component:DashComponent
   },
+  { path: 'auth0', loadChildren: () => import('./modules/auth0/auth0.module').then(m => m.Auth0Module) },
   {
     path:'**', pathMatch: 'full',
     component:PageNotFoundComponent

@@ -18,8 +18,8 @@ import { EntertainmentPackageComponent } from './components/entertainment-packag
 import { DiagonalsComponent } from './components/diagonals/diagonals.component';
 import { ServicesofferedComponent } from './components/servicesoffered/servicesoffered.component';
 import { SharedModule } from './modules/shared/shared.module';
-import { AuthModule } from './modules/auth/auth.module';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { Auth0Module } from './modules/auth0/auth0.module';
 
 @NgModule({
   declarations: [
@@ -45,7 +45,7 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
     FormsModule,
     ReactiveFormsModule,
     SharedModule,
-    AuthModule,
+    Auth0Module,
     DashboardModule
   
   ],
