@@ -1,6 +1,7 @@
 <div class="login-main-container">
     <div class="logo">
-      <img
+      <a routerLink="">
+        <img
         class="logo"
         src="assets/logo2.png"
         width="160px"
@@ -8,6 +9,7 @@
         alt=""
         srcset=""
       />
+      </a>
     </div>
     <div class="form-container">
       <form class="form" [formGroup]="passwordForm" (ngSubmit)="submit()">
@@ -79,7 +81,7 @@
                   <!-- <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">Accept Ts & Cs is required</div> -->
           </div>
         <button type="submit">submit</button>
-        <p>Have an account? <a routerLink="/login">login here </a></p>
+        <p>Have an account? <a routerLink="/auth0">login here </a></p>
       </form>
     </div>
   </div>

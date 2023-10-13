@@ -9,7 +9,6 @@ import { RateComponent } from './components/rate/rate.component';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { ServicesofferedComponent } from './components/servicesoffered/servicesoffered.component';
 import { PageNotFoundComponent } from './modules/shared/page-not-found/page-not-found.component';
-import { DashComponent } from './modules/dashboard/dash/dash.component';
 
 const routes: Routes = [
   {
@@ -44,10 +43,6 @@ const routes: Routes = [
     path:"services",
     component:ServicesofferedComponent
   },
-  {
-    path:"dash",
-    component:DashComponent
-  },
   { path: 'auth0', loadChildren: () => import('./modules/auth0/auth0.module').then(m => m.Auth0Module) },
   {
     path:'**', pathMatch: 'full',
@@ -57,6 +52,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [
+    RouterModule
+  ]
 })
 export class AppRoutingModule { }

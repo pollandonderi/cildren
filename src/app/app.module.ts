@@ -18,8 +18,8 @@ import { EntertainmentPackageComponent } from './components/entertainment-packag
 import { DiagonalsComponent } from './components/diagonals/diagonals.component';
 import { ServicesofferedComponent } from './components/servicesoffered/servicesoffered.component';
 import { SharedModule } from './modules/shared/shared.module';
-import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { Auth0Module } from './modules/auth0/auth0.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -37,6 +37,9 @@ import { Auth0Module } from './modules/auth0/auth0.module';
     DiagonalsComponent,
     ServicesofferedComponent,
   ],
+  exports:[
+    
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -46,8 +49,6 @@ import { Auth0Module } from './modules/auth0/auth0.module';
     ReactiveFormsModule,
     SharedModule,
     Auth0Module,
-    DashboardModule
-  
   ],
   providers: [
   ],
