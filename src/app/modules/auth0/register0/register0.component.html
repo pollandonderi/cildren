@@ -13,7 +13,6 @@
     </div>
     <div class="form-container">
       <form class="form" [formGroup]="passwordForm" (ngSubmit)="submit()">
-        <!-- <div class="form-group"> -->
           <label for="">Your Name</label>
           <input type="text" formControlName="name" id="Yourname" />
           <div
@@ -27,8 +26,6 @@
               Name should be 3 character.
             </div>
           </div>
-        <!-- </div> -->
-        <!-- <div class="form-group"> -->
           <label for="">Your email</label>
           <input type="email" name="" id="" formControlName="email" />
           <div
@@ -43,7 +40,6 @@
               Please, enter valid email address.
             </div>
           </div>
-        <!-- </div> -->
         <label for="password1">Your password</label>
         <input type="password" name="" id="password1" formControlName="password1"/>
         <div
@@ -76,9 +72,7 @@
             Password does'nt match.
           </div>
           <div>
-              <!-- <input type="checkbox" formControlName="acceptTerms" id="acceptTerms" [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" /> -->
                   <label for="acceptTerms" class="form-check-label">Accept Terms & Conditions</label>
-                  <!-- <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">Accept Ts & Cs is required</div> -->
           </div>
         <button type="submit">submit</button>
         <p>Have an account? <a routerLink="/auth0">login here </a></p>

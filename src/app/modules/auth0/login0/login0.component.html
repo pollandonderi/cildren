@@ -4,11 +4,31 @@
     </div>
     <div class="form-container">
       
-      <form class="form">
+      <form class="form" [formGroup]="loginForm" (ngSubmit)="submit()">
         <label for="">Your Name</label>
-        <input type="text" name="" id="">
+        <input type="text" name="yourName" id="yourName" formControlName="yourName">
+        <div
+        *ngIf="f['yourName'].touched && f['yourName'].invalid"
+        class="alert alert-danger"
+      >
+        <div *ngIf="f['yourName'].errors && f['yourName'].errors['required']">
+          Your Name is required.
+        </div>
+      </div>
         <label for="">Your password</label>
-        <input type="password" name="" id="">
+        <input type="password" name="yourPassword" id="yourPassword" formControlName="yourPassword">
+        <div
+        *ngIf="f['yourPassword'].touched && f['yourPassword'].invalid"
+        class="alert alert-danger"
+      >
+        <div *ngIf="f['yourPassword'].errors && f['yourPassword'].errors['required']">
+          password is required.
+        </div>
+
+        <div *ngIf="f['yourPassword'].errors && f['yourPassword'].errors['yourPassword']">
+          Please, enter a valid password.
+        </div>
+      </div>
         <button type="submit">submit</button>
         <p class="register">Don't have an account? <a routerLink="/auth0/register">register here </a></p>
         <div class="or">
