@@ -20,6 +20,7 @@ import { ServicesofferedComponent } from './components/servicesoffered/serviceso
 import { SharedModule } from './modules/shared/shared.module';
 import { Auth0Module } from './modules/auth0/auth0.module';
 import { RouterModule } from '@angular/router';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { RouterModule } from '@angular/router';
     ReactiveFormsModule,
     SharedModule,
     Auth0Module,
+    LazyLoadImageModule
   ],
   providers: [
   ],
