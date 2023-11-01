@@ -44,6 +44,7 @@ const routes: Routes = [
     component:ServicesofferedComponent
   },
   { path: 'auth0', loadChildren: () => import('./modules/auth0/auth0.module').then(m => m.Auth0Module) },
+  { path: 'dashboard', loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule) },
   {
     path:'**', pathMatch: 'full',
     component:PageNotFoundComponent

@@ -19,10 +19,8 @@ import { DiagonalsComponent } from './components/diagonals/diagonals.component';
 import { ServicesofferedComponent } from './components/servicesoffered/servicesoffered.component';
 import { SharedModule } from './modules/shared/shared.module';
 import { Auth0Module } from './modules/auth0/auth0.module';
-import { RouterModule } from '@angular/router';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { OpenComponent } from './components/open/open.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,9 +50,9 @@ import { OpenComponent } from './components/open/open.component';
     ReactiveFormsModule,
     SharedModule,
     Auth0Module,
-    LazyLoadImageModule
+    LazyLoadImageModule,
   ],
-  providers: [
+  providers: [    
   ],
   bootstrap: [AppComponent]
 })

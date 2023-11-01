@@ -32,9 +32,6 @@ export class Register0Component {
       return this.passwordForm.controls;
   
     }
-  
-    
-  
     submit(){
   
       console.log(this.passwordForm.value);
