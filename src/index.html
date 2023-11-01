@@ -13,5 +13,21 @@
 </head>
 <body>
   <app-root></app-root>
+
+  <script>
+    function decodeJWTToken(token){
+      return JSON.parse(atob(token.split(".")[1]))
+    }
+    function handleCredentialResponse(response){
+      // to decode the credential response
+      const responsePayload = decodeJWTToken(response.credential);
+      sessionStorage.setItem("loggedInUser", JSON.stringify(responsePayload));
+      // to redirect to the dashboard
+      window.location.href="/dashboard";
+    }
+    function handleSignOut(){
+      google.accounts.id.disableAutoSelect();
+    }
+  </script>
 </body>
 </html>

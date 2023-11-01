@@ -1,1 +1,15 @@
-<p>dashboard works!</p>
+<div class="header">
+    <div class="center">
+        <img src="assets/logo2.png" width="110px" height="50px" alt="" srcset="">
+    </div>
+   <div class="prof center">
+    <a (click)="handleSignOut()"><fa-icon [icon]="PowerOff" size="lg" class="powericon"></fa-icon></a>
+    <div class="profile center">
+        <img [src]="userProfile.picture" alt="" srcset="" class="img">
+        <div *ngIf="userProfile">
+            <p class="email">{{userProfile.email}}</p>
+            <div class="welcoming" >welcome {{userProfile.name}}</div>
+        </div>
+    </div>
+   </div>
+</div>
