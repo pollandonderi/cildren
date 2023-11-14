@@ -8,17 +8,8 @@ declare var handleSignOut:any;
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  PowerOff = faPowerOff
-  @Input() userProfile:any;
-  // userProfile:any;
-  constructor(private router:Router){}
-  ngOnInit(){
-    this.userProfile = JSON.parse(sessionStorage.getItem("loggedInUser") || "") 
+  ngOnInit(): void {
+    // throw new Error('Method not implemented.');
   }
-  handleSignOut(){
-    sessionStorage.removeItem("loggedInUser")  
-    this.router.navigate(["/homepage"]).then(() =>{
-
-    });
-  }
+  
 }

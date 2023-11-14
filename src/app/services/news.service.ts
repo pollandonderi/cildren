@@ -10,7 +10,6 @@ export class NewsService {
 
   constructor(private httpClient: HttpClient) { }
   getnews(){
-
     return this.httpClient.get(this.url);
 
   }
