@@ -1,0 +1,23 @@
+@import 'src/themes.scss';
+.section{
+        height: 100svh;
+        background-color: $the-blue;
+ul{
+    padding-top: 2em;
+}
+    li{
+        
+        margin-block: 1em;
+        margin-inline: 1em;
+        
+    } 
+    a{
+        padding: .4em 1.1em;
+        cursor: pointer;
+        border-radius: 20px;
+        color: $white;
+    }
+    a:hover{
+        background-color: $pinkish;
+    }
+}

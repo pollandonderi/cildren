@@ -9,7 +9,7 @@ declare var handleSignOut:any;
 })
 export class DashboardComponent implements OnInit {
   ngOnInit(): void {
-    // throw new Error('Method not implemented.');
+    
   }
   
 }
